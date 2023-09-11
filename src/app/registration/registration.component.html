@@ -1,0 +1,40 @@
+<form action=""  method="post">
+
+ 
+
+    <label for="customerName">custname</label>
+
+    <input id="customerName" type="text" name="customerName" #txt1 placeholder="customerName"><br>
+
+ 
+
+    <label for="mobile">mobile</label>
+
+    <input id="mobile" type="text" name="mobile" #txt2 placeholder="mobile"><br>
+
+ 
+
+    <label for="email">Email</label>
+
+    <input id="email" type="text" name="email" #txt3  placeholder="email"><br>
+
+ 
+    <label for="postalcode">Postal Code</label>
+
+    <input id="postalcode" type="number" name="postalcode" #txt5 placeholder="postalcode"><br>
+
+
+    <label for="state">State</label>
+
+    <input id="state" type="text" name="state" #txt6 placeholder="state"><br>
+
+
+    <label for="password">Password</label>
+
+    <input id="password" type="text" name="password" #txt7 placeholder="password"><br>
+
+
+    <input type="button" value="submit" (click)="onsubmit(txt1.value,txt2.value,txt3.value,txt5.value,txt6.value,txt7.value)">
+
+
+</form>
